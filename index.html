@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Compras</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Lista de Compras</h1>
+  </header>
+  <main>
+    <section id="add-item">
+      <h2>Adicionar Novo Item</h2>
+      <form id="item-form">
+        <input type="text" id="item-name" placeholder="Nome do item" required>
+        <input type="text" id="item-category" placeholder="Categoria" required>
+        <input type="number" id="item-price" placeholder="Preço (R$)" step="0.01">
+        <button type="submit">Adicionar</button>
+      </form>
+    </section>
+    <section id="item-list">
+      <h2>Itens</h2>
+      <ul id="items"></ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
